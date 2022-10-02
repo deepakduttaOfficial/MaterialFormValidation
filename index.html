@@ -11,27 +11,30 @@
 
 <body>
     <div class="container">
+        <div id="alertMass">
+            <h4 class="alert-heading">Sign up successfully</h4>
+        </div>
         <h4 class="heading">Sign up page</h4>
         <form class="input-container">
             <div class="input-group">
                 <input id="userName" class="input" type="text" required autofocus>
-                <label for="name" class="input-lable">User name</label>
-                <!-- <p id="" class="helper-text">Enter valid user name</p> -->
+                <label for="name" class="input-lable" id="userNameLabel">User name</label>
+                <p id="userNameHelper" class="helper-text"></p>
             </div>
             <div class="input-group">
                 <input id="email" class="input" type="text" required>
-                <label for="name" class="input-lable">Enter Your Email</label>
-                <!-- <p id="" class="helper-text">Enter valid user name</p> -->
+                <label for="name" class="input-lable" id="emailLabel">Enter Your Email</label>
+                <p id="emailHelper" class="helper-text"></p>
             </div>
             <div class="input-group">
                 <input id="password" class="input" type="password" required autocomplete>
-                <label for="name" class="input-lable">Enter your password</label>
-                <!-- <p id="" class="helper-text">Enter valid user name</p> -->
+                <label for="name" class="input-lable" id="passwordLabel">Enter your password</label>
+                <p id="passwordHelper" class="helper-text"></p>
             </div>
             <div class="input-group">
                 <input id="confirmPassword" class="input" type="password" required autocomplete>
-                <label for="name" class="input-lable">Enter your confirm password</label>
-                <!-- <p id="" class="helper-text">Enter valid user name</p> -->
+                <label for="name" class="input-lable" id="confirmPasswordLabel">Enter your confirm password</label>
+                <p id="confirmPasswordHelper" class="helper-text"></p>
             </div>
             <button class="btn">Sign up</button>
         </form>

@@ -33,6 +33,22 @@ body {
   align-items: center;
 }
 
+#alertMass {
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: none;
+}
+
+.alert-heading {
+  color: #0f5132;
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .heading {
   color: var(--heding-text-color);
   font-size: 29px;
