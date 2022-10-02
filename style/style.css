@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --bg-black: #000822;
+  --blue: #13072e;
+  --heding-text-color: #adadad;
+  --input-text-color: #747474;
+  --helper-text-color: #ff3939;
+  --sky-color: #0288d1;
+  --button-bg-green: #2ab874;
+  --button-text-color: #3c3a3a;
+}
+
+body {
+  background-color: var(--bg-black);
+}
+
+.container {
+  padding: 40px 0;
+  width: 588px;
+  background-color: var(--blue);
+  border-radius: 11px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  color: var(--heding-text-color);
+  font-size: 29px;
+  font-weight: 400;
+}
+
+/* // input style start  */
+
+.input-container {
+  margin-top: 30px;
+  width: 361.97px;
+}
+
+.input-group {
+  position: relative;
+  z-index: 1;
+  margin-top: 22px;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  color: var(--input-text-color);
+  background-color: transparent;
+  outline: 1.5px solid var(--input-text-color);
+  font-weight: 500;
+}
+
+.input-lable {
+  color: var(--input-text-color);
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  transition: 0.2s;
+  font-size: 16px;
+  z-index: -1;
+}
+
+.helper-text {
+  color: var(--helper-text-color);
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.input:is(:focus, :valid, :hover) {
+  outline: 2px solid var(--sky-color);
+}
+
+.input:is(:focus, :valid) + .input-lable {
+  z-index: 1;
+  color: var(--sky-color);
+  transform: translate(-15px, -26px) scale(0.8);
+  padding-inline: 5px;
+  background-color: #13072e;
+}
+/* ////////////////////// */
+
+.btn {
+  margin: 22px 0;
+  width: 100%;
+  background-color: var(--button-bg-green);
+  border-radius: 5px;
+  color: var(--button-text-color);
+  font-size: 20px;
+  padding: 9px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:is(:hover, :focus) {
+  background-color: #1e9d60;
+}
+
+/* Media quary for responsiveness screen size (610, 472, 402) */
+@media only screen and (max-width: 610px) {
+  .container {
+    width: 450px;
+  }
+  .input-container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .container {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .container {
+    width: 300px;
+  }
+}
